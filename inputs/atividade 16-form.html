@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS</title>
+    <style>
+        #titulogeral{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="titulogeral" class="titulogeral">Lista de Inputs - HTML </h1>
+    <br><br>
+   
+    <form action="">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" class="nome" >
+
+    <br>
+    <label for="sobren">Sobrenome:</label>
+    <input type="text" id="sobren" class="sobren" >
+
+    <br><br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" class="senha">
+
+    <br><br>
+    <p>Sexo:</p>
+    <input type="radio" id="masc" class="masc" value="masc" name="gen">
+    <label for="masc">Masculino</label>
+    <br>
+    <input type="radio" id="fem" class="fem" value="fem" name="gen">
+    <label for="fem">Feminino</label>
+    <br>
+    <input type="radio" id="ndecla" class="ndecla" value="ndecla" name="ndecla">
+    <label for="ndecla">Não Declarado</label>
+
+     <br><br>
+     <p>Marque as opções de seu interesse:</p>
+     <input type="checkbox" id="func" class="func" nome="funcao">
+    <label for="asp">ASP.NET</label>
+    <br>
+     <input type="checkbox" id="func" class="func" nome="funcao">
+    <label for="js">JavaScript</label>
+    <br>
+     <input type="checkbox" id="func" class="func" nome="funcao">
+    <label for="php">PHP</label>
+    <br>
+     <input type="checkbox" id="func" class="func" nome="funcao">
+    <label for="python">Python</label>
+
+    <br><br>
+    <p>Entre com seus comentarios na caixa a seguir:</p>
+    <label for="mensagem"></label>
+    <textarea name="mensagem" id="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui"></textarea>
+
+    <br><br>
+    <p>Selecione a tecnologias que deseja aprender:</p>
+    <label for=""></label>
+    <select id="tec" name="tec">
+        <option value="" disabled selected></option>
+        <option value="asp">ASP.NET</option>
+        <option value="C">Linguagem C</option>
+        <option value="C++">C++</option>
+        <option value="java">Java</option>
+    </select>
+
+    <br>
+    <p>Selecione um arquivo de seu computador para upload:</p>
+    <label for="arquivo"></label>
+    <input type="file" id="arquivo" class="arquivo" name="arquivo" accept=".pdf, .png, .jpg">
+    
+    <br><br>
+    <input type="submit" value="Enviar">
+    <br>
+    <input type="reset" value="Resetar">
+
+</form>
+</body>
+</html>

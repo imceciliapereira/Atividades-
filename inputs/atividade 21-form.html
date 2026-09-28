@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Entrada</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            max-width: 200px;           
+            margin-left: 40%;
+            margin-top: 10px;        
+        }
+
+        img{
+            width: 100px ;
+            height: 100px ;
+            margin-left: 42px;      
+        }
+
+        body{
+            background-image: linear-gradient(blue,rgb(0, 183, 255), green);
+            background-repeat: no-repeat; 
+            color: white;   
+        }
+
+        input, select, button{
+            border-radius: 8px;
+            border: none;
+        }
+
+        @layer demo{
+            *{
+                margin: 0;
+            }
+            body{
+                height: 100dvh;
+            }
+        }
+
+        #enviar{
+            background-color:  yellow;
+        }
+
+    </style>
+</head>
+<body>    
+
+<form action="https://sheetdb.io/api/v1/8tdnc8o8j8mrm" method="post">
+
+    <img src="imagem_perfil.png" alt="">
+
+    <h1 id="h1">Informações</h1><br><br>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="data[nome]"  id="nome">
+        <br><br>
+
+        <label for="sbnome">Sobrenome</label>
+        <input type="text" name="data[sbnome]" id="sbnome">
+        <br><br>
+
+        <label for="cdd">Cidade</label>
+        <input type="text" name="data[cdd]" id="cdd">
+        <br><br>
+
+        <label for="uf">Estado</label>
+        <select id="uf" name="data[uf]">
+            <option value="" disabled selected></option>
+            <option value="ac">Acre</option>
+            <option value="ap">Amapá</option>
+            <option value="am">Amazonas</option>
+            <option value="pa">Pará</option>
+            <option value="ro">Rondônia</option>
+            <option value="rr">Roraima</option>
+            <option value="to">Tocantins</option>
+            <option value="ma">Maranhão</option>
+            <option value="pi">Piauí</option>
+            <option value="ce">Ceará</option>
+            <option value="rn">RIo Grande do Norte</option>
+            <option value="pb">Paraíba</option>
+            <option value="pe">Pernambuco</option>
+            <option value="al">Alagoas</option>
+            <option value="se">Sergipe</option>
+            <option value="ba">Bahia</option>
+            <option value="go">Goiás</option>
+            <option value="mt">Mato Grosso</option>
+            <option value="ms">Mato Grosso do Sul</option>
+            <option value="df">Distrito Federal</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="es">Espírito Santo</option>
+            <option value="pr">Paraná</option>
+            <option value="sc">Santa Catarina</option>
+            <option value="rs">Rio Grande do Sul</option>
+        </select>
+        <br><br>
+        <button type="submit" id="enviar"> Enviar </button>
+
+</form>
+</body>
+</html>

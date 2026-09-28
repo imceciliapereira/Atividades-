@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS</title>
+    <style>
+        label{
+            font-weight: bold;
+            margin-top: 6px;
+        }
+        input[type="text"],
+        input[type="password"]{
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        #btnlogin{
+            margin-top: 15px;
+            padding: 8px;
+            background-color: aqua;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <br><br>
+
+    <form action="">
+        <fieldset>
+            <legend>Formulário de Login</legend>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+
+        <input type="submit" value="Login" id="btnlogin">
+    
+</fieldset>
+</form>
+</body>
+</html>

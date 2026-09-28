@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS</title>
+    <style>
+        #titulogeral{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="titulogeral" class="titulogeral">Formulário </h1>
+    <br><br>
+
+    <form action="">
+    <label for="nome">Seu Nome</label>
+    <input type="text" id="nome" class="nome" >
+
+    <br><br>
+    <label for="contato">Seu Telefone</label>
+    <input type="tel" id="contato" class="contato" name="contato">
+
+    <br><br>
+    <label for="email">Seu Email</label>
+    <input type="email" id="email" class="email">
+
+   <br><br>
+   <p>Deseja receber nossas novidades?</p>
+    <label for="opc">Sim</label>
+    <input type="radio" id="sim" class="sim" value="sim" name="opc">
+    <label for="opc">Não</label>
+    <input type="radio" id="não" class="não" value="não" name="opc">
+
+    <br><br>
+    <label for="mensagem">Sua Mensagem</label>
+    <textarea name="mensagem" id="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui"></textarea>
+
+    <br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar Campos">
+
+</form>
+</body>
+</html>

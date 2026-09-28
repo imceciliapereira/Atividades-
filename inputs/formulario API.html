@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Dados</title>
+
+    <style>
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            padding: 12px;
+        }
+
+    </style>
+</head>
+<body> 
+<form action="https://sheetdb.io/api/v1/0lfpz4lew450o" method="post">
+    <fieldset>
+        <legend>Coleta de Dados</legend>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="data[nome]"  id="nome">
+
+        <label for="sbnome">Sobrenome</label>
+        <input type="text" name="data[sbnome]" id="sbnome">
+
+        <label for="cpf">CPF</label>
+        <input type="number" name="data[cpf]" id="cpf">
+
+        <button type="submit">Enviar Dados</button>
+    </fieldset>
+
+</form>
+</body>
+</html>

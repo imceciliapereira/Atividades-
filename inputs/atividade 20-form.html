@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS</title>
+    <style>
+
+         body{
+            background-image: url('fundo azul.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+        form{
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
+        #snome{
+            margin-left: 11px;
+        }
+        #nome{
+            margin-left: 88px;
+        }
+        #email{
+            margin-left: 119px;
+            width: 365px;
+        }
+        #contato{
+            margin-left: 105px;
+            width: 105px;
+        }
+        #contato2{
+            margin-left: 10px;
+            width: 107px;
+        }
+        #msg{ margin-left: 1px;
+             width: 245px;
+             height: 25px;
+        }
+        #mensagem{
+            margin-left: 86px;
+             width: 365px;
+        }
+        #func{
+            margin-left: 88px;
+        }   
+        #h1{
+            margin-left: 52px;
+            color: aliceblue; 
+             font-family: Arial, Helvetica, sans-serif;     
+        } 
+        #p{
+            margin-left:52px ;
+            color: aliceblue;
+             font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="h1">Formulário de Contato</h1>
+    <p id="p">Por favor, preencha suas informações.</p>
+    <form action="">
+
+        <label for="nome">Seu nome :</label>
+        <input type="text" id="nome" class="nome" placeholder="Nome" >
+        <input type="text" id="snome" class="snome" placeholder="Sobrenome">
+        <br><br>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" class="email" placeholder="e.g.hello@contact.net">
+        <br><br>
+
+        <label for="contato">Telefone:</label>
+        <input type="tel" id="contato" class="contato" name="contato" placeholder="###">
+        <input type="tel" id="contato2" class="contato" name="contato" placeholder="###">
+        <input type="tel" id="contato2" class="contato" name="contato" placeholder="###">
+        <br><br>
+
+        <label for="msg">Assunto da mensagem:</label>
+        <select id="msg" name="msg">
+            <option value="" disabled selected>Outros</option>
+            <option value="cmp">Compras</option>
+            <option value="vnd">Vendas</option>
+            <option value="inf">Informações</option>
+        </select>
+        <br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" rows="5" cols="40"></textarea>
+        <br><br>
+        
+        <label for="">Verificação:</label>
+        <input type="checkbox" id="func" class="func" nome="funcao">
+        <label for="asp">Não sou um Robô</label>
+        <br><br><br>       
+        
+        <input type="submit" value="Enviar Formulário">
+
+</form>
+</body>
+</html>

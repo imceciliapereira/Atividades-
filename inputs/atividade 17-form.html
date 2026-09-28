@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS</title>
+    <style>
+
+        label{
+            font-weight: bold;
+            margin-top: 6px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="number"]{
+            border:1px solid black;
+            border-radius:4px;
+            font-size:16px;
+            box-sizing:border-box;
+            width:260px;
+        }
+
+          input[type="radio"]{
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        textarea{
+             font-family: Arial, Helvetica, sans-serif;
+        }
+
+       #btnlogin{
+            margin-top: 15px;
+            padding: 8px;
+            background-color: auto;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        legend{
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        #informacoes_cartao{
+            max-width: 300px;
+            margin: 0 auto;
+            border-radius: 8px;
+            border: solid;
+        }
+
+        #cartao_pai{
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+         fieldset{    
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <br><br>
+
+    <form action="">
+
+        <fieldset>
+            <legend>Suas Informações</legend>
+
+        <label for="nome">1. Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br><br>
+
+        <label for="email">2. Email</label>
+        <input type="email" id="email" class="email" placeholder="Informe seu email"><br><br>
+
+        <label for="contato">3. Telefone</label>
+        <input type="tel" id="contato" class="contato" name="contato" placeholder="Ex: 38 999554586">
+    
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Seu Endereço</legend>
+
+            <label for="endereço">1. Endereço</label>
+            <textarea name="endereço" id="endereço" rows="5" cols="40" placeholder="Digite seu endereço aqui"></textarea><br><br>
+
+            <label for="cep">2. Cep</label>
+            <input type="number" id="cep" class="cep"><br><br>
+            
+            <label for="país">3. País</label>
+            <input type="text" id="país" class="país" name="país">
+    
+        </fieldset>
+        <br><br>
+
+        <fieldset id="cartao_pai">
+            <legend>Detalhes do Cartão</legend>
+            
+            <fieldset id="informacoes_cartao">
+                <legend>Tipo de Cartão</legend>
+            
+                 <input type="radio" id="cart" class="cart" value="cart" name="cartão">
+                  <label for="cart">1. Visa</label><br>
+                 
+                 <input type="radio" id="carta" class="carta" value="carta" name="carta">
+                 <label for="carta">2. AmEx</label><br>
+                 
+                 <input type="radio" id="cartao" class="cartao" value="cartao" name="cartao">
+                 <label for="cartao">3. Mastercard</label> 
+            </fieldset><br><br>
+            
+            <label for="num">2. Número do Cartão</label>
+            <input type="number" id="num" class="num"><br><br>
+
+            <label for="cod">3. Código de Segurança</label>
+            <input type="number" id="cod" class="cod" name="cod"><br><br>
+
+            <label for="name">4. Nome no Cartão</label>
+            <input type="text" id="name" class="name" name="namecar" placeholder="nome exatamente igual ao do cartão"><br>
+        </fieldset>
+
+        <fieldset>
+        <input type="submit" value="Login" id="btnlogin">
+        </fieldset>
+
+</form>
+</body>
+</html>
