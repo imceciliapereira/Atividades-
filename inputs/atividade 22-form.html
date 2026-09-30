@@ -66,7 +66,7 @@
 </head>
 <body>  
 
-<form action="https://sheetdb.io/api/v1/jsc3jzsoh8qmc" method="post">
+<form action="https://sheetdb.io/api/v1/jsc3jzsoh8qmc" id="meuform"  method="post">
 
     <h1 id="h1">Formulário de Cadastro</h1><br>
 
@@ -79,7 +79,7 @@
         <input type="text" name="data[emp]" id="emp">
         <br><br>
 
-        <label for="email">E-mail</label>
+        <label for="email">Email</label>
         <input type="email" id="email" name="data[email]" class="email" placeholder="hello@contact.net">
         <br><br>
 
@@ -96,19 +96,25 @@
         <select id="sx" name="data[sexo]">
             <option value="" disabled selected>-Selecione a opção</option>
             <option value="Feminino">Feminino</option>
-            <option value="Masculino
-            ">Masculino</option>
+            <option value="Masculino">Masculino</option>
         </select>
         <br><br>
 
          <p>Você esta começando na programação?</p>
-            <input type="radio" id="sim" name="data[sim]" class="sim" value="sim" name="sim">
+            <input type="radio" id="sim" name="data[opc]" class="sim" value="sim" name="sim">
             <label for="sim">Sim</label>
-            <input type="radio" id="nao" name="data[nao]" class="nao" value="nao" name="nao">
+            <input type="radio" id="nao" name="data[opc]" class="nao" value="nao" name="nao">
             <label for="nao">Não</label>
             <br><br>
         <button type="submit" id="enviar"> Enviar </button>
 
 </form>
+
+<script>
+    document.getElementById('meuform').addEventListener('submit',function(event){
+        alert('Dados Enviados com sucesso!');
+        window.location.href= 'atividade 22-form.html';
+    });
+</script>
 </body>
 </html>
