@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formLogin">
+
+        <h1>LOGIN</h1>
+        <label for="user">Usuário:</label>
+        <input type="text" name="user" id="user">
+        
+        <label for="pass">Senha:</label>
+        <input type="password" name="pass" id="pass">
+        
+        <button type="submit">Entrar</button>
+    </form>
+    
+    <script>
+    
+        const usuarios = [
+            {usuario:"fredy", senha:"senhaforte123"},
+            {usuario:"tonhao", senha:"bastiao123"},
+        ];
+        
+        document.getElementById("formLogin").addEventListener("submit",function(log){
+
+            log.preventDefault();
+            const user = document.getElementById("user").value;  
+            const pass = document.getElementById("pass").value;
+
+            const logado = usuarios.find(x => x.usuario === user && x.senha === pass);
+
+            if(logado){
+                sessionStorage.setItem("usuarioLogado", logado.usuario);
+                window.location.href = "pages/home.html";
+            }else{
+                alert("Usuário ou Senha Incorretos.");
+            }
+        });
+        
+    </script>
+</body>
+</html>
